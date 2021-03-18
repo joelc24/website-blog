@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  width: 50%;
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header #btn-menu {
+  display: none;
+}
+
+header label {
+  width: 0;
+  display: none;
+}
+
+header label:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+header .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header .menu ul li {
+  display: inline-block;
+  border-right: 1px solid #4a4a4a;
+}
+
+header .menu ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+header .menu ul li a .fas {
+  margin-right: 6px;
+}
+
+header .menu ul li a:hover {
+  background: #4a4a4a;
+  color: lawngreen;
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 10px;
+    width: auto;
+  }
+  header label {
+    display: block;
+    position: relative;
+    top: 1px;
+    left: 6px;
+    font-size: 18px;
+  }
+  header .menu {
+    position: absolute;
+    background: #333;
+    width: 70%;
+    margin-left: -70%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 60%;
+  }
+  header .menu ul li {
+    border-top: 1px solid #696767;
+    background-color: #464545;
+  }
+  header #btn-menu:checked ~ .menu {
+    margin: 0;
+  }
+}
+
+body {
+  font-family: "Cardo", serif;
+  color: #333;
+  font-size: 1.2rem;
+  line-height: 1.6em;
+}
+
+body h1 {
+  font-family: "Patrick Hand", cursive;
+  font-size: 2.3em;
+  line-height: 1.3em;
+}
+
+body p {
+  margin-top: 30px;
+  margin-bottom: 1.6em;
+  text-align: justify;
+  font-size: 25px;
+}
+
+body .container {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+body .footer {
+  background-color: #00000083;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+body .main {
+  padding-top: 9rem;
+}
+
+body .main #linkin {
+  width: 720px;
+  height: 360px;
+  border-radius: 10%;
+  margin-left: 45px;
+}
+
+body .main #footer {
+  font-size: 0.75em;
+  text-align: center;
+  padding-top: 50px;
+  color: #ccc;
+  clear: both;
+}
+
+body .main #footer p {
+  text-align: center;
+}
+
+body .main .social-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+}
+
+body .main .social-icon1 {
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+}
+
+@media screen and (max-width: 767px) {
+  body .main {
+    padding-top: 6rem;
+  }
+  body .main #linkin {
+    width: inherit;
+    height: auto;
+    margin-left: 10%;
+  }
+  body .main .container figure {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  body .main .container figure #Rock {
+    width: 295px;
+    height: auto;
+  }
+  body .main .container figure #heavy {
+    width: 295px;
+    height: auto;
+  }
+  body .main .container figure li {
+    font-size: 22px;
+  }
+  body .main .container1 figure {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  body .main .container1 figure #elvis {
+    width: 295px;
+    height: auto;
+  }
+  body .main .container1 figure #punk {
+    width: 295px;
+    height: auto;
+  }
+  body .main section {
+    width: inherit;
+    margin: auto;
+  }
+  body .main section p {
+    font-size: 22px;
+  }
+  body .main #footer {
+    font-size: 0.75em;
+    text-align: center;
+    padding-top: 50px;
+    color: #ccc;
+    clear: both;
+  }
+  body .main #footer p {
+    text-align: center;
+  }
+  body .main .social-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+  }
+  body .main .social-icon1 {
+    width: 60px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+.main .container figure {
+  border: thin #c0c0c0 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 5px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 30px auto;
+}
+
+.main .container figure #Rock {
+  width: 720px;
+  height: 480px;
+}
+
+.main .container figure #heavy {
+  width: 720px;
+  height: 480px;
+}
+
+.main .container figure figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.main .container ul li {
+  margin-bottom: 12px;
+  margin-top: 0;
+  max-width: 100%;
+  font-size: 25px;
+  line-height: 43px;
+  text-align: justify;
+}
+
+.main .container ul li a {
+  color: #5f9ea0;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.main .container1 {
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.main .container1 figure {
+  border: thin #c0c0c0 solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  padding: 5px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 30px auto;
+}
+
+.main .container1 #elvis {
+  width: 720px;
+  height: 480px;
+}
+
+.main .container1 #punk {
+  width: 720px;
+  height: 480px;
+}
+
+.main .container1 figcaption {
+  background-color: #222;
+  color: #fff;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+
+.main .container1 section p a {
+  color: #5f9ea0;
+  text-decoration: underline;
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
