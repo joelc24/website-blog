@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+/*******************
+       HEADER
+*********************/
+
 header {
   width: 50%;
   background: #333;
@@ -62,6 +66,10 @@ header .menu ul li a:hover {
   color: lawngreen;
 }
 
+/*******************
+       MEDIAQUERY HEADER
+*********************/
+
 @media only screen and (max-width: 767px) {
   header {
     padding: 10px;
@@ -104,6 +112,10 @@ header .menu ul li a:hover {
   }
 }
 
+/*******************
+       BODY
+*********************/
+
 body {
   font-family: "Cardo", serif;
   color: #333;
@@ -125,9 +137,38 @@ body p {
 }
 
 body .container {
-  width: 85%;
   max-width: 850px;
   margin: 0 auto;
+}
+
+body .container table {
+  width: 85%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  caption-side: bottom;
+}
+
+body .container caption {
+  padding-top: 20px;
+  font-style: italic;
+}
+
+body .container td, body .container th {
+  border: 2px solid #222;
+  padding: 10px 20px;
+}
+
+body .container th {
+  background-color: #333;
+  color: white;
+}
+
+body .container td a {
+  color: #5f9ea0;
+  text-decoration: underline;
+  opacity: 1;
 }
 
 body .footer {
@@ -171,6 +212,10 @@ body .main .social-icon1 {
   margin: 0 5px;
 }
 
+/*******************
+      MEDIAQUERY BODY
+*********************/
+
 @media screen and (max-width: 767px) {
   body .main {
     padding-top: 6rem;
@@ -179,6 +224,9 @@ body .main .social-icon1 {
     width: inherit;
     height: auto;
     margin-left: 10%;
+  }
+  body .main .container {
+    width: 85%;
   }
   body .main .container figure {
     width: -webkit-min-content;
@@ -237,6 +285,10 @@ body .main .social-icon1 {
     margin: 0 5px;
   }
 }
+
+/*******************
+       MAIN PAGE HISTORIA
+*********************/
 
 .main .container figure {
   border: thin #c0c0c0 solid;
