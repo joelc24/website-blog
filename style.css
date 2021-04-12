@@ -49,6 +49,10 @@ header .menu ul li {
   border-right: 1px solid #4a4a4a;
 }
 
+header .menu ul li a.seleccionar {
+  color: lime;
+}
+
 header .menu ul li a {
   display: block;
   padding: 0.5rem 1rem;
@@ -57,10 +61,6 @@ header .menu ul li a {
   border-radius: 5px;
   text-decoration: none;
   color: white;
-}
-
-.seleccionar {
-  color: lawngreen;
 }
 
 header .menu ul li a .fas {
