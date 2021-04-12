@@ -182,8 +182,16 @@ body.dark h1 {
   color: lightgreen;
 }
 
+body.dark h2 {
+  color: lightgreen;
+}
+
 body.dark p {
   color: aliceblue;
+}
+
+body.dark table {
+  border: solid 2px #333;
 }
 
 body.dark td {
