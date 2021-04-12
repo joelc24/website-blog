@@ -179,7 +179,7 @@ body {
   font-size: 1.2rem;
   line-height: 1.6em;
   -webkit-transition: .4s ease all;
-  transition: .4s ease all;
+  transition: .3s ease all;
 }
 
 body.dark {
