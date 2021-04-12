@@ -59,6 +59,10 @@ header .menu ul li a {
   color: white;
 }
 
+header .menu ul li a .seleccionar {
+  color: lime;
+}
+
 header .menu ul li a .fas {
   margin-right: 6px;
 }
