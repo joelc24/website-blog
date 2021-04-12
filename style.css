@@ -11,10 +11,10 @@
 *********************/
 
 header {
-  width: 50%;
+  width: 40%;
   background: #333;
   color: white;
-  padding: 2rem 0;
+  padding: 2rem;
   margin: 0 auto;
   position: fixed;
   left: 0;
@@ -40,6 +40,8 @@ header .menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 header .menu ul li {
@@ -77,6 +79,7 @@ header .menu ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   outline: none;
+  margin-left: 8px;
 }
 
 .switch::after {
@@ -151,6 +154,11 @@ header .menu ul li a:hover {
     top: 10px;
     left: -10px;
     width: 60%;
+    align-items: inherit;
+  }
+  header .menu ul .switch {
+    margin-left: 0;
+    align-self: end;
   }
   header .menu ul li {
     border-top: 1px solid #696767;
@@ -179,10 +187,6 @@ body.dark {
 }
 
 body.dark h1 {
-  color: lightgreen;
-}
-
-body.dark h2 {
   color: lightgreen;
 }
 
