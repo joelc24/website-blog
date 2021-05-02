@@ -206,13 +206,13 @@ body.dark table {
   border: solid 2px #333;
 }
 
-body.dark td {
-  color: aliceblue;
-}
-
 body.dark td:hover {
   color: #000;
   background: lightslategray;
+}
+
+body.dark td {
+  color: aliceblue;
 }
 
 body.dark caption {
