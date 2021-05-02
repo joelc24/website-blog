@@ -210,6 +210,11 @@ body.dark td {
   color: aliceblue;
 }
 
+body.dark td:hover {
+  color: #000;
+  background: lightslategray;
+}
+
 body.dark caption {
   color: aliceblue;
 }
