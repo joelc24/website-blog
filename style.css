@@ -483,4 +483,16 @@ body .main .social-icon1 {
   text-decoration: underline;
   opacity: 1;
 }
+
+@media(prefers-color-schema: dark){
+  .container{
+    background-color: black;
+  }
+}
+
+@media(prefers-color-schema: light){
+  .container{
+    background-color: whhite;
+  }
+}
 /*# sourceMappingURL=style.css.map */
